@@ -142,7 +142,7 @@
 
             <!-- ข้อ 6 ----------------------------------------------------------------- -->
             <div id='ex6'>
-                <div @click="isActive ? isActive = false : isActive = true" :class="[{'is-active':isActive}, 'dropdown']">
+                <div @click="isActive = isActive ? false : true" :class="[{'is-active':isActive}, 'dropdown']">
                     <div class="dropdown-trigger">
                         <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <span>Month Selection</span>
